@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding-bottom: 90px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(font/lato-regular-webfont.woff) format("woff");
+    src: url(font/lato-regular-webfont.woff2) format("woff2");
+}
+
+body {
+    background-size: 300px;
+    background-image: url(../img/logo-icon-50-opacity.png);
+    background-position: right -50px top -50px;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+}
+
+a:visited {
+    color: inherit;
+}
+
+h3 {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+.apptitle {
+    text-align: center;
+    display: block;
+    background-color: #00547e;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+.apptitle h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.content {
+    padding: 10px;
+}
+
+/* Back controls & title div */
+.controls {
+    background-color: #00547e;
+    min-height: 50px;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+.controls h1 {
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    position: relative;
+    bottom: 2px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    margin-top: 10px;
+}
+
+/* SVG Buttons */
+
+.backarrow  {
+    width: 8%;
+    width: 20px;
+    position: relative;
+    margin-left: 10px;
+    color: white;
+}
+
+/* Prepping input containers */
+.name {
+    width: 150px;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+
+.input {
+    display: inline-block;
+}
+
+.input p {
+    color: black;;
+    display: inline;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7rem;
+}
+
+/* a single left-floating element on a page */
+.left {
+    width: 190px;
+    clear: left;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+/* a single right-floating element on a page */
+.right {
+    width: 190px;
+    box-sizing: border-box;
+    clear: right;
+    float: left;
+    margin-bottom: 10px;
+}
+
+/* Calculator results styling */
+.result h3 {
+    color: #79b2e2;
+    text-shadow: white 1px 1px 8px;
+}
+
+.title {
+    border-bottom: 2px solid black;
+}
+
+/* footer styling */
+.footer {
+    width: 100%;
+    background-color: #004a73;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+}
+
+.footer p {
+    line-height: 1.2rem;
+}
+
+.socials {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.socials img {
+    width: 20px;
+}
+
+.socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    clear: both;
+    background-color: #d8d8d8;
+    height: 30px;
+    padding: 5px;
+}
+
+#copyright p {
+    font-size: 10px;
+}
+
+select {
+    height: 30px;
+    width: 125px;
+    font-size: 12px;
+}
+
+.imagecontainer {
+    clear: both;
+    /* height: 300px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.imagecontainer img {
+    margin: auto auto;
+    display: block;
+    width: 80%;
+    max-width: 250px;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+@keyframes loadingStartup {
+    0% {background-color: black;}
+    100% {background-color: #093265;}
+}
+
+#loading {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 1;
+    animation: loadingStartup 1s forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loading img {
+    display: block;
+    margin: 50px auto;
+    width: 30%;
+    animation: rotate 5s linear infinite;
+}
+
+#loading p {
+    display: block;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#loadingtext {
+    font-size: 20px !important;
+}

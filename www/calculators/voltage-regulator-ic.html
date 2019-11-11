@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/voltage-regulator-ic.css" />
+    <title>Voltage Regulator IC</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="controls">
+                <a href="../index.html">
+                    <img class="backarrow" src="../img/ico/back-cross.svg">
+                </a>
+                <h1>
+                    Voltage Regulator IC
+                </h1>
+        </div>
+
+        <div class="content">
+
+            <div class="left">
+                <!-- R1 INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>R1</h4>
+                    </div>
+                    <div class="input">
+                        <input id="r1" type="number" placeholder="433,6">
+                        <p>Ohms</p>
+                    </div>
+                </div>
+
+                <!-- R2 INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>R2</h3>
+                    </div>
+                    <div class="input">
+                        <input id="r2" type="number" placeholder="220">
+                        <p>Ohms</p>
+                    </div>
+                </div>
+
+                <!-- Vref INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>Vref</h3>
+                    </div>
+                    <div class="input">
+                        <input id="vref" type="number" placeholder="1,25">
+                        <p>Volts</p>
+                    </div>
+                </div>
+
+                <!-- Ambient Temprature INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>Ambient Temperature</h3>
+                    </div>
+                    <div class="input">
+                        <input id="ambtemp" type="number" placeholder="30">
+                        <p>Degrees</p>
+                    </div>
+                </div>
+
+                <!-- Thermal Res to Case INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>Thermal Res to Case</h3>
+                    </div>
+                    <div class="input">
+                        <input id="thermal" type="number" placeholder="220">
+                        <p>&deg;C/W</p>
+                    </div>
+                </div>
+
+                <!-- Input Voltage INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>Input Voltage</h3>
+                    </div>
+                    <div class="input">
+                        <input id="inputvolt" type="number" placeholder="10">
+                        <p>Volts</p>
+                    </div>
+                </div>
+
+                <!-- Regulated Current INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>Regulated Current</h3>
+                    </div>
+                    <div class="input">
+                        <input id="regcurrent" type="number" placeholder="0,053">
+                        <p>Amps</p>
+                    </div>
+                </div>
+
+                <!-- Heatsink Therm Res INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>Heatsink Therm Res</h3>
+                    </div>
+                    <div class="input">
+                        <input id="heatthermres" type="number" placeholder="1">
+                        <p>&deg;C/W</p>
+                    </div>
+                </div>
+
+                <!-- Max Junction Temp INPUT -->
+                <div>
+                    <div class="name">
+                        <h3>Max Junction Temp</h3>
+                    </div>
+                    <div class="input">
+                        <input id="maxjunctemp" type="number" placeholder="125">
+                        <p>&deg;C</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="right">
+                
+                <h3 class="result title">RESULTS:</h3>
+                <!-- VOUT OUTPUT -->
+                <div>
+                    <div class="name result">
+                        <h3>Vout</h3>
+                    </div>
+                    <div class="input">
+                        <input id="vout" readonly type="number" placeholder="3,7136363636363634
+                        ">
+                        <p>Volts</p>
+                    </div>
+                </div>
+
+                <!-- PD OUTPUT -->
+                <div>
+                    <div class="name result">
+                        <h3>PD</h3>
+                    </div>
+                    <div class="input">
+                        <input id="pd" readonly type="number" placeholder="0,33317727272727277">
+                        <p>Watts</p>
+                    </div>
+                </div>
+
+                <!-- Junction Temprature OUTPUT -->
+                <div>
+                    <div class="name result">
+                        <h3>Junction Temprature</h3>
+                    </div>
+                    <div class="input">
+                        <input id=junctemp readonly type="number" placeholder="103,63217727272728">
+                        <p>&deg;C</p>
+                    </div>
+                </div>
+
+                <!-- Too Hot? -->
+                <div id="toohot">
+                    <p>Too Hot!!</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+            <ul class="socials">
+                <li id="facebook">
+                    <a href="https://www.facebook.com/Best-Inductive-Components-2072200249745432/" onclick="window.open('http://facebook.com/Best-Inductive-Components-2072200249745432/', '_system'); return false;">
+                        <img src="../img/ico/facebook.svg">
+                    </a>
+                </li>
+                <li id="linkedin">
+                    <a href="https://www.linkedin.com/company/28838419/" onclick="window.open('https://www.linkedin.com/company/28838419/', '_system'); return false;">
+                        <img src="../img/ico/linkedin.svg">
+                    </a>
+                </li>
+                <li id="youtube">
+                    <a href="https://www.youtube.com/channel/UCSpt1Li1D5zXvlGS6V83xNQ" onclick="window.open('https://www.youtube.com/channel/UCSpt1Li1D5zXvlGS6V83xNQ', '_system'); return false;">
+                        <img src="../img/ico/youtube.svg">
+                    </a>
+                </li>
+                <li id="instagram">
+                    <a href="https://www.instagram.com/bestinductivecomponents/" onclick="windows.open('https://www.instagram.com/bestinductivecomponents/', '_system'); return false;">
+                        <img src="../img/ico/instagram.svg">
+                    </a>
+                </li>
+            </ul>
+            <div id="copyright">
+                    <p>&copy;2019. Best Inductive Components BV. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/voltage-regulator-ic.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+</body>
+
+</html>

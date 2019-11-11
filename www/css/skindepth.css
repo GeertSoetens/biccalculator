@@ -1,0 +1,10 @@
+#skincontainer {
+    clear: both;
+    height: 300px;
+    padding-top: 50px;
+}
+
+#skinn {
+    margin: auto auto;
+    display: block;
+}

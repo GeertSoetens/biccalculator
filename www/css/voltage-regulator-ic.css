@@ -1,0 +1,23 @@
+@keyframes toohotflash {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+
+#toohot {
+    display: block;
+    padding-top: 15px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    height: 50px;
+    border: solid red 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#toohot p {
+    color: red;
+    margin: auto;
+    animation: toohotflash 2s infinite;
+    font-weight: bold;
+}
