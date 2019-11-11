@@ -18,4 +18,5 @@ The app has been developped using Adobe Phonegap and Apache Cordova. That means 
 Currently this app only supports Android. \
 Phonegap Build Badges: \
 \
-<img src=https://build.phonegap.com/apps/3745752/badge/3761508652/version.svg /> <img src=https://build.phonegap.com/apps/3745752/badge/3761508652/android.svg />
+<img src=https://build.phonegap.com/apps/3745752/badge/3761508652/version.svg /> <img src=https://build.phonegap.com/apps/3745752/badge/3761508652/android.svg /> <img src=https://build.phonegap.com/apps/3745752/badge/3761508652/ios.svg />
+
