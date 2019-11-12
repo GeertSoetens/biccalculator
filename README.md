@@ -20,3 +20,8 @@ Phonegap Build Badges: \
 \
 <img src=https://build.phonegap.com/apps/3745752/badge/3761508652/version.svg /> <img src=https://build.phonegap.com/apps/3745752/badge/3761508652/android.svg /> <img src=https://build.phonegap.com/apps/3745752/badge/3761508652/ios.svg />
 
+## Download
+
+The app is now officialy been given the go for production! You can now download the app in it's current state on the play store. IOS version is still in active development.
+
+[Google Play Store](https://play.google.com/store/apps/details?id=com.bestinductivecomponents.calculator)
