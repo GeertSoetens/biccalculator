@@ -1,10 +1,13 @@
 document.addEventListener('deviceready', function() {
     let loadingElement = document.getElementById('loading');
-
+    
     function onDeviceReady() {
         window.open = cordova.InAppBrowser.open;
     }
 
+    /*
+    Create a function that forces code to wait a set ammount of miliseconds
+    */
     function wait(ms) {
         let start = new Date().getTime();
         let end = start;
@@ -19,7 +22,12 @@ document.addEventListener('deviceready', function() {
         return Math.floor(Math.random() * (max - min)) + min;
     }
 
+    /*
+    I'm sorry, who ever ends up reading this script
+    fake loading screen
+    */
     function load() {
+        if(typeof(loadingElement != 'undefined' && loadingElement != null)) {
         let loadingText = document.getElementById('loadingtext');
 
         setTimeout(function() {
@@ -40,7 +48,7 @@ document.addEventListener('deviceready', function() {
         setTimeout(function() {
             loadingElement.style.display = "none";
         }, 2500);
-
+        }
     }
 
     if(sessionStorage.getItem('loaded') === null) {
@@ -48,7 +56,32 @@ document.addEventListener('deviceready', function() {
         sessionStorage.setItem('loaded', true);
         load();
     } else {
-        loadingElement.style.display = "none";
+        if (typeof(loadingElement) != 'undefined' && loadingElement != null) {
+            loadingElement.style.display = "none";
+        }
+    }
+
+    /*
+    Create the lightbox for info elements.
+    Add event listener to info element.
+
+    */
+    let infoElement = document.getElementById('info');
+    let infoLightBox = document.getElementById('infobox');
+    if (typeof(infoElement) != 'undefined' && infoElement != null) {
+        console.log('Info element found!');
+        infoElement.addEventListener('click', function() {
+            console.log('CLICKED!');
+            infoLightBox.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        })
+        infoLightBox.addEventListener('click', function() {
+            console.log('CLOSED!');
+            infoLightBox.style.display = 'none';
+            document.body.style.overflow = 'visible';
+        })
+    } else {
+        console.log('Could not find info element, returned; ' + infoElement);
     }
 
 })
