@@ -5,15 +5,19 @@ document.addEventListener('deviceready', function() {
         window.open = cordova.InAppBrowser.open;
     }
 
-    /*
-    Create a function that forces code to wait a set ammount of miliseconds
-    */
+    // Create a function that forces code to wait a set ammount of miliseconds
+
     function wait(ms) {
         let start = new Date().getTime();
         let end = start;
         while (end < start + ms) {
             end = new Date().getTime();
         }
+    }
+
+    // No scroll function for phones
+    function noScroll() {
+        window.scrollTo(0,0);
     }
 
     function getRandomNumber(min, max) {
@@ -63,25 +67,25 @@ document.addEventListener('deviceready', function() {
 
     /*
     Create the lightbox for info elements.
-    Add event listener to info element.
-
+    Add event listeners to info elements.
     */
+
     let infoElement = document.getElementById('info');
     let infoLightBox = document.getElementById('infobox');
+
     if (typeof(infoElement) != 'undefined' && infoElement != null) {
-        console.log('Info element found!');
+
         infoElement.addEventListener('click', function() {
-            console.log('CLICKED!');
             infoLightBox.style.display = 'block';
             document.body.style.overflow = 'hidden';
+            window.addEventListener('scroll', noScroll);
         })
+
         infoLightBox.addEventListener('click', function() {
-            console.log('CLOSED!');
             infoLightBox.style.display = 'none';
             document.body.style.overflow = 'visible';
+            window.removeEventListener('scroll', noScroll);
         })
-    } else {
-        console.log('Could not find info element, returned; ' + infoElement);
     }
 
 })
