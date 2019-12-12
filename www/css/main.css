@@ -74,15 +74,18 @@ h3 {
     font-size: 20px;
     overflow-wrap: break-word;
     margin-top: 10px;
+    width: 40%;
+    min-width: 30px;
 }
 
 /* SVG Buttons */
 
 .backarrow  {
     width: 20px;
-    position: relative;
     margin-left: 10px;
     color: white;
+    float: left;
+    margin-top: 7px;
 }
 
 #info img {
@@ -93,6 +96,16 @@ h3 {
     float: right;
     margin-top: 7px;
     cursor: pointer;
+}
+
+#reset img {
+    width: 20px;
+    height: 20px;
+    color: white;
+    float: right;
+    margin-top: 7px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 /* info lightbox for calculators */ 

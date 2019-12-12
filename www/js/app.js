@@ -88,4 +88,19 @@ document.addEventListener('deviceready', function() {
         })
     }
 
+    // Create reset button functionality
+    let resetElement = document.getElementById('reset');
+
+    if (typeof(resetElement) != 'undefined' && resetElement != null) {
+
+        resetElement.addEventListener('click', function() {
+            let inputs = document.getElementsByTagName('input');
+
+            for (i = 0; i < inputs.length; i++) {
+                inputs.item(i).value = '';
+            }
+        })
+
+    }
+
 })

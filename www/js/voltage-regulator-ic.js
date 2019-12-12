@@ -48,8 +48,6 @@ document.addEventListener('deviceready', function() {
         voutinput.value = vout;
         pdinput.value = pd;
         junctempinput.value = junctemp;
-
-        console.log(pd);
     }
 
     init();
