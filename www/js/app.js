@@ -4,27 +4,6 @@ function onDeviceReady() {
     window.open = cordova.InAppBrowser.open;
 }
 
-// Create a function that forces code to wait a set ammount of miliseconds
-
-function wait(ms) {
-    let start = new Date().getTime();
-    let end = start;
-    while (end < start + ms) {
-        end = new Date().getTime();
-    }
-}
-
-// No scroll function for phones
-function noScroll() {
-    window.scrollTo(0,0);
-}
-
-function getRandomNumber(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-}
-
 /*
 Create the lightbox for info elements.
 Add event listeners to info elements.
