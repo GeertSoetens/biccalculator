@@ -18,7 +18,7 @@
 }
 
 .calcbutton:hover {
-    background-color: hsl(200, 100%, 26%);
+    background-color: #0089c7;
     color: white;
     transform: translate(0, -5px);
 }
