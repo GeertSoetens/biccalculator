@@ -29,4 +29,8 @@ function calc() {
     voltppoutput.value = pp;
 }
 
+<<<<<<< HEAD
 init();
+=======
+init();
+>>>>>>> 5f1cd5812a067d371c45831b72fc240e43562111

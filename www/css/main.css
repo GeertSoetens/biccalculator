@@ -25,7 +25,7 @@ body {
     background-size: 300px;
     background-image: url(../img/logo.svg);
     background-repeat: no-repeat;
-    background-position: top -5px right -5px;
+    background-position: bottom 20px right 20px;
     background-attachment: fixed;
 
     font-family: 'Lato', sans-serif;
@@ -45,7 +45,7 @@ h3 {
 .apptitle {
     text-align: center;
     display: block;
-    background-color: #00547e;
+    background-color: #0089c7;
     padding: 5px 0;
     margin-bottom: 10px;
 }
@@ -63,7 +63,7 @@ h3 {
 
 /* Back controls, title div, info box controls */
 .controls {
-    background-color: #00547e;
+    background-color: #0089c7;
     min-height: 50px;
     width: 100%;
     padding-bottom: 15px;
@@ -183,7 +183,7 @@ h3 {
 /* footer styling */
 .footer {
     width: 100%;
-    background-color: #004a73;
+    background-color: #0089c7;
     margin: 0;
     text-align: center;
     position: fixed;
