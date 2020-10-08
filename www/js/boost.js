@@ -1,9 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5f1cd5812a067d371c45831b72fc240e43562111
 let vin, vo, vd, freq, idcmax, idcmin, vsw, toff, toffinput, deltai, deltaiinput, etop, etopinput, indc, indcinput;
 
 // Function runs when page has loaded
@@ -55,8 +51,4 @@ function calc() {
     indcinput.value = indc;
 }
 
-<<<<<<< HEAD
 init();
-=======
-init();
->>>>>>> 5f1cd5812a067d371c45831b72fc240e43562111

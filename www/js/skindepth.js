@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-=======
 'use strict';
 
 
 let materialselect, material, freq, skindepth, result;
 
 // runs once when the page has loaded
->>>>>>> 5f1cd5812a067d371c45831b72fc240e43562111
 function init() {
 
     // Get input elements

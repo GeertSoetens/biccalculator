@@ -1,10 +1,6 @@
 'use strict';
-<<<<<<< HEAD
-    let involt, ind, dc, expeff, freq, outputpow, pic, elements;
-=======
 
 let involt, ind, dc, expeff, freq, outputpow, pic, elements;
->>>>>>> 5f1cd5812a067d371c45831b72fc240e43562111
 
 function init() {
 
@@ -31,10 +27,6 @@ function calc() {
     
     outputpow.value = ((0.5 * (parseFloat(ind.value.replace(',','.')) / 1000000) * ((parseFloat(involt.value.replace(',','.')) / ( parseFloat(ind.value.replace(',','.')) / 1000000)) * (((parseFloat(freq.value.replace(',','.')) * 1000) ** -1) * (parseFloat(dc.value.replace(',','.')) / 100))) ** 2) / ((parseFloat(freq.value.replace(',','.')) * 1000) ** -1)) * (parseFloat(expeff.value.replace(',','.')) / 100);
     pic.value = (parseFloat(involt.value.replace(',','.')) / ( parseFloat(ind.value.replace(',','.')) / 1000000)) * ((( parseFloat(freq.value.replace(',','.')) * 1000) ** -1) * (parseFloat(dc.value.replace(',','.')) / 100));
-<<<<<<< HEAD
-}
-=======
 }
 
 init();
->>>>>>> 5f1cd5812a067d371c45831b72fc240e43562111
