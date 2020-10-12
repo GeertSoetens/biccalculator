@@ -1,6 +1,4 @@
 'use strict';
-let materialselect, material, turns, radius, length, inductance;
-
 
 let materialselect, material, turns, radius, length, inductance;
 

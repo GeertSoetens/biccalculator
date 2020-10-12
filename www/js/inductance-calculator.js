@@ -1,6 +1,4 @@
 'use strict';
-let involt, freq, dc, peakind, ind, indval, epo, elements;
-
 
 let involt, freq, dc, peakind, ind, indval, epo, elements;
 
