@@ -1,6 +1,5 @@
 'use strict';
 
-
 let r1, r2, vref, ambtemp, thermal, inputvolt, regcurrent, heatthermres, maxjunctemp, vout, pd, junctemp, voutinput, pdinput, junctempinput, toohot;
 
 function init() {
