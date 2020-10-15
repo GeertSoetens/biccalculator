@@ -15,6 +15,10 @@ input::placeholder {
     color:lightgray;
 }
 
+input[type=submit] {
+    margin: 10px 0;
+}
+
 @font-face {
     font-family: "Lato";
     src: url(font/lato-regular-webfont.woff) format("woff");
