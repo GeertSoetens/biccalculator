@@ -45,7 +45,7 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../css/voltage-regulator-ic.css" />
-    <title>Frequency Calculator</title>
+    <title>Frequenz-Rechner</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                     <img class="backarrow" src="../img/ico/back-cross.svg" alt="Back Cross">
                 </a>
                 <h1>
-                    Frequency Calculator
+                    Frequenz-Rechner
                 </h1>
                 <a id="reset">
                         <img src="../img/ico/reset.svg">
@@ -80,16 +80,16 @@
                 <!-- Inputs -->
                 <div>
                     <div class="name">
-                        <h3>Input Voltage</h3>
+                        <h3>Eingangsspannung</h3>
                     </div>
                     <div class="input">
                         <input id="inputvolt" type="number" placeholder="12">
-                        <p>Volts</p>
+                        <p>Volt</p>
                     </div>
                 </div>
                 <div>
                     <div class="name">
-                        <h3>Inductor Size</h3>
+                        <h3>Größe der Drossel</h3>
                     </div>
                     <div class="input">
                         <input id="indsize" type="number" placeholder="130">
@@ -98,16 +98,16 @@
                 </div>
                 <div>
                     <div class="name">
-                        <h3>Peak Switch Current</h3>
+                        <h3>Spitzenschaltstrom</h3>
                     </div>
                     <div class="input">
                         <input id="switchcurr" type="number" placeholder="14">
-                        <p>Amps</p>
+                        <p>Ampere</p>
                     </div>
                 </div>
                 <div>
                     <div class="name">
-                        <h3>Duty Cycle</h3>
+                        <h3>Einschaltdauer</h3>
                     </div>
                     <div class="input">
                         <input id="dcycle" type="number" placeholder="55">
@@ -118,11 +118,11 @@
 
             <div class="right">
                <!-- Outputs -->
-               <h3 class="result title">RESULTS:</h3>
+               <h3 class="result title">ERGEBNISSE:</h3>
                
                <div>
                    <div class="name result">
-                       <h3>Req. Switching Frequency</h3>
+                       <h3>Benötigte Schaltfrequenz</h3>
                    </div>
                    <div class="input">
                        <input id="rsf" type="number" readonly placeholder="4,02930402930403">
@@ -131,11 +131,11 @@
                </div>
                <div>
                    <div class="name result">
-                       <h3>Estimated Power Output</h3>
+                       <h3>Geschätzte Leistungsabgabe</h3>
                    </div>
                    <div class="input">
                        <input id="epo" type="number" readonly placeholder="33,264">
-                       <p>Watts</p>
+                       <p>Watt</p>
                    </div>
                </div>
             </div>

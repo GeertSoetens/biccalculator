@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../css/voltage-regulator-ic.css" />
-    <title>Voltage Regulator IC</title>
+    <title>Spannungsregler-IC </title>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                     <img class="backarrow" src="../img/ico/back-cross.svg" alt="backarrow">
                 </a>
                 <h1>
-                    Voltage Regulator IC
+                    Spannungsregler-IC 
                 </h1>
                 <a id="reset">
                     <img src="../img/ico/reset.svg">
@@ -110,18 +110,18 @@
                 <!-- Ambient Temprature INPUT -->
                 <div>
                     <div class="name">
-                        <h3>Ambient Temperature</h3>
+                        <h3>Umgebungstemperatur</h3>
                     </div>
                     <div class="input">
                         <input id="ambtemp" type="number" placeholder="30">
-                        <p>Degrees</p>
+                        <p>&deg;C</p>
                     </div>
                 </div>
 
                 <!-- Thermal Res to Case INPUT -->
                 <div>
                     <div class="name">
-                        <h3>Thermal Res to Case</h3>
+                        <h3>Thermischer Widerstand zum Gehäuse</h3>
                     </div>
                     <div class="input">
                         <input id="thermal" type="number" placeholder="220">
@@ -132,29 +132,29 @@
                 <!-- Input Voltage INPUT -->
                 <div>
                     <div class="name">
-                        <h3>Input Voltage</h3>
+                        <h3>Eingangsspannung</h3>
                     </div>
                     <div class="input">
                         <input id="inputvolt" type="number" placeholder="10">
-                        <p>Volts</p>
+                        <p>Volt</p>
                     </div>
                 </div>
 
                 <!-- Regulated Current INPUT -->
                 <div>
                     <div class="name">
-                        <h3>Regulated Current</h3>
+                        <h3>Geregelter Strom</h3>
                     </div>
                     <div class="input">
                         <input id="regcurrent" type="number" placeholder="0,053">
-                        <p>Amps</p>
+                        <p>Ampere</p>
                     </div>
                 </div>
 
                 <!-- Heatsink Therm Res INPUT -->
                 <div>
                     <div class="name">
-                        <h3>Heatsink Therm Res</h3>
+                        <h3>Kühlkörper Therm Widerstand</h3>
                     </div>
                     <div class="input">
                         <input id="heatthermres" type="number" placeholder="1">
@@ -165,7 +165,7 @@
                 <!-- Max Junction Temp INPUT -->
                 <div>
                     <div class="name">
-                        <h3>Max Junction Temp</h3>
+                        <h3>Maximale Sperrschicht-Temperatur</h3>
                     </div>
                     <div class="input">
                         <input id="maxjunctemp" type="number" placeholder="125">
@@ -179,7 +179,7 @@
 
             <div class="right">
                 
-                <h3 class="result title">RESULTS:</h3>
+                <h3 class="result title">ERGEBNISSE:</h3>
                 <!-- VOUT OUTPUT -->
                 <div>
                     <div class="name result">
@@ -188,7 +188,7 @@
                     <div class="input">
                         <input id="vout" readonly type="number" placeholder="3,7136363636363634
                         ">
-                        <p>Volts</p>
+                        <p>Volt</p>
                     </div>
                 </div>
 
@@ -206,7 +206,7 @@
                 <!-- Junction Temprature OUTPUT -->
                 <div>
                     <div class="name result">
-                        <h3>Junction Temperature</h3>
+                        <h3>Sperrschicht-Temperatur</h3>
                     </div>
                     <div class="input">
                         <input id=junctemp readonly type="number" placeholder="103,63217727272728">
@@ -216,7 +216,7 @@
 
                 <!-- Too Hot? -->
                 <div id="toohot">
-                    <p>Too Hot!!</p>
+                    <p>Zu heiß!!</p>
                 </div>
 
             </div>
