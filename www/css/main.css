@@ -17,6 +17,27 @@ input::placeholder {
 
 input[type=submit] {
     margin: 10px 0;
+    background-color: transparent;
+    padding: 10px 20px;
+    border:#0089c7 solid 2px;
+    transition: 0.2s all ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: #0088c75e;
+    transform: translateY(-1px);
+    box-shadow: 0 1px black;
+}
+
+input[type=submit]:active {
+    background-color: #0089c7;
+    border: #0089c7 solid 2px;
+    transform: translateY(3px);
+    box-shadow: 0 -2px black;
+}
+
+input[type=submit]:focus {
+    outline: 0;
 }
 
 @font-face {
@@ -31,7 +52,6 @@ body {
     background-repeat: no-repeat;
     background-position: bottom 20px right 20px;
     background-attachment: fixed;
-
     font-family: 'Lato', sans-serif;
 }
 
