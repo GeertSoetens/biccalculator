@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-html {
-    padding-bottom: 90px;
-}
-
 a {
     text-decoration: none;
     color: inherit;
+}
+
+input {
+    outline: 0;
 }
 
 input::placeholder {
@@ -268,14 +268,13 @@ select {
     clear: both;
     /* height: 300px; */
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .imagecontainer img {
-    margin: auto auto;
+    margin: 0 10px;
     display: block;
-    width: 80%;
-    max-width: 250px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .noscroll {
