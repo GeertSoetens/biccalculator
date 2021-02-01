@@ -37,7 +37,7 @@ if (typeof(resetElement) != 'undefined' && resetElement != null) {
         let select = document.getElementById('matselect');
 
         for (i = 0; i < inputs.length; i++) {
-            if (inputs.item(i).id != "submitbutton") {
+            if (inputs.item(i).type != "submit") {
                 inputs.item(i).value = '';
             }
         }
