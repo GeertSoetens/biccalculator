@@ -20,7 +20,7 @@
     "cordova-plugin-statusbar": "~2.1.2",
     "cordova-plugin-vibration": "~2.1.0",
     "cordova-plugin-whitelist": "~1.2.1",
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.2",
     "grunt-contrib-handlebars": "^2.0.0"
   },
   "cordova": {
