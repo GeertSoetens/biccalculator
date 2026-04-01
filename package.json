@@ -48,7 +48,7 @@
     }
   },
   "dependencies": {
-    "cordova-android": "^8.1.0",
+    "cordova-android": "^15.0.0",
     "grunt-compile-handlebars": "^2.0.4"
   }
 }
